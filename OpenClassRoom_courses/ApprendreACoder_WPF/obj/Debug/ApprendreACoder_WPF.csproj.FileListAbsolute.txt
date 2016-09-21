@@ -1,0 +1,14 @@
+C:\Users\Abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\ApprendreACoder_WPF\bin\Debug\ApprendreACoder_WPF.exe.config
+C:\Users\Abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\ApprendreACoder_WPF\bin\Debug\ApprendreACoder_WPF.exe
+C:\Users\Abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\ApprendreACoder_WPF\bin\Debug\ApprendreACoder_WPF.pdb
+C:\Users\Abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\ApprendreACoder_WPF\obj\Debug\ApprendreACoder_WPF.csprojResolveAssemblyReference.cache
+C:\Users\Abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\ApprendreACoder_WPF\obj\Debug\MainWindow.g.cs
+C:\Users\Abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\ApprendreACoder_WPF\obj\Debug\App.g.cs
+C:\Users\Abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\ApprendreACoder_WPF\obj\Debug\ApprendreACoder_WPF_MarkupCompile.cache
+C:\Users\Abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\ApprendreACoder_WPF\obj\Debug\ApprendreACoder_WPF_MarkupCompile.lref
+C:\Users\Abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\ApprendreACoder_WPF\obj\Debug\MainWindow.baml
+C:\Users\Abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\ApprendreACoder_WPF\obj\Debug\ApprendreACoder_WPF.g.resources
+C:\Users\Abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\ApprendreACoder_WPF\obj\Debug\ApprendreACoder_WPF.Properties.Resources.resources
+C:\Users\Abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\ApprendreACoder_WPF\obj\Debug\ApprendreACoder_WPF.csproj.GenerateResource.Cache
+C:\Users\Abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\ApprendreACoder_WPF\obj\Debug\ApprendreACoder_WPF.exe
+C:\Users\Abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\ApprendreACoder_WPF\obj\Debug\ApprendreACoder_WPF.pdb

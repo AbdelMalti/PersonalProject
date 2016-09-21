@@ -1,0 +1,6 @@
+c:\users\abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\Apprendre_a_coder_pour_debutant\bin\Debug\Apprendre_a_coder_pour_debutant.exe.config
+c:\users\abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\Apprendre_a_coder_pour_debutant\bin\Debug\Apprendre_a_coder_pour_debutant.exe
+c:\users\abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\Apprendre_a_coder_pour_debutant\bin\Debug\Apprendre_a_coder_pour_debutant.pdb
+c:\users\abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\Apprendre_a_coder_pour_debutant\obj\Debug\Apprendre_a_coder_pour_debutant.csprojResolveAssemblyReference.cache
+c:\users\abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\Apprendre_a_coder_pour_debutant\obj\Debug\Apprendre_a_coder_pour_debutant.exe
+c:\users\abdeljelil\documents\visual studio 2015\Projects\OpenClassRoom_courses\Apprendre_a_coder_pour_debutant\obj\Debug\Apprendre_a_coder_pour_debutant.pdb
