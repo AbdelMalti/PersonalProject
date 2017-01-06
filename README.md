@@ -1,5 +1,5 @@
 # PersonalProject
-All the project that I have finished
+All the project that I have finished : The more or less game.
 
 - OpenClassRoom course that I followed : 
 1 https://openclassrooms.com/courses/apprendre-a-coder-pour-les-vrais-debutants
