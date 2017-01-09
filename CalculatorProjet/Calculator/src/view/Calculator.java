@@ -4,15 +4,20 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.GridLayout;
 import java.awt.Insets;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
-import Controler.EnterNumberListener;
+import Controler.Controler;
 
 public class Calculator extends JFrame{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	//**************Attributes***************//
 	private Dimension FrameDimension = new Dimension(350, 450);
 	private Dimension userInputDimension = new Dimension(300, 100);
@@ -21,7 +26,7 @@ public class Calculator extends JFrame{
 	private Dimension OperationButtonDimension = new Dimension(65, 45);
 	private Dimension NumberButtonDimension = new Dimension(70,70);
 	
-	private Font userInputPolice = new Font("Georgia", Font.BOLD, 24);
+	private Font userInputPolice = new Font("Courier New", Font.BOLD, 24);
 	
 	private JTextField userInput = new JTextField("Hello", SwingConstants.RIGHT);
 	private JPanel leftPanel = new JPanel();
@@ -29,6 +34,8 @@ public class Calculator extends JFrame{
 	
 	private Character OperationCaractere[] = {'C','+','-','*','/', '%'};
 	private Character numberCaracter[] = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '.','0', '='};
+	
+	private Controler controler = new Controler(this);
 	//**************************************//
 	
 	//*************Constructors***************//
@@ -51,7 +58,7 @@ public class Calculator extends JFrame{
 	private void SetUpInput(){
 		userInput.setPreferredSize(userInputDimension);
 		userInput.setHorizontalAlignment(JTextField.RIGHT);
-		userInput.setMargin(new Insets(10, 10, 10, 10));
+		userInput.setMargin(new Insets(10, 10, 10, 50));
 		userInput.setBorder(BorderFactory.createLineBorder(new Color(10,10,10)));
 		userInput.setFont(userInputPolice);
 	}
@@ -82,6 +89,7 @@ public class Calculator extends JFrame{
 			JButton b = new JButton(caracterOfButton);
 			b.setPreferredSize(OperationButtonDimension);
 			rightPanel.add(b);
+			b.addActionListener(new EnterNumberListener());
 		}
 	}
 
@@ -89,6 +97,26 @@ public class Calculator extends JFrame{
 		return userInput.getText();
 	}
 	public void setTextFromUserInput(String update){
-		userInput.setText(update);
+		this.userInput.setText(update);
+	}
+	
+	class EnterNumberListener implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			//TODO : call the model functions from the Controler.
+			String number = e.getActionCommand().toString();
+			controler.OnClick(number);
+		}
+		
+	}
+	
+	class EnterOperationListener implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			//TODO : call the model functions from the Controler.
+		}
+		
 	}
 }
