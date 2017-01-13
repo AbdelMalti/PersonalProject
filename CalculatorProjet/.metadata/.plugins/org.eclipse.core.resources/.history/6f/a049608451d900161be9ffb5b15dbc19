@@ -54,8 +54,6 @@ public class Model {
 		for(char c : equation.toCharArray()){
 			verifyingEquation(c);
 		}
-		listOfNumber.add(tempNumber);
-		tempNumber = "";
 	}
 	
 	/**
@@ -126,6 +124,8 @@ public class Model {
 			}
 			listOfNumber.add(tempNumber);
 			tempNumber = "";
+		}else{
+			//HERE
 		}
 		return isInputOkay;
 	}
@@ -137,6 +137,7 @@ public class Model {
 	private boolean verifyingOrderOfInput(){
 		if(tempNumber.equals(""))
 			return false;
+		//tempNumber = "";
 		return true;
 	}
 	//***********************************************//

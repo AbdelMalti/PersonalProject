@@ -126,6 +126,8 @@ public class Model {
 			}
 			listOfNumber.add(tempNumber);
 			tempNumber = "";
+		}else{
+			//HERE
 		}
 		return isInputOkay;
 	}
@@ -137,6 +139,7 @@ public class Model {
 	private boolean verifyingOrderOfInput(){
 		if(tempNumber.equals(""))
 			return false;
+		//tempNumber = "";
 		return true;
 	}
 	//***********************************************//

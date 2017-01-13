@@ -42,7 +42,6 @@ public class Model {
 	private void math() {
 		// TODO Auto-generated method stub
 		
-		listOfNumber.clear();
 	}
 
 	/**
@@ -54,8 +53,6 @@ public class Model {
 		for(char c : equation.toCharArray()){
 			verifyingEquation(c);
 		}
-		listOfNumber.add(tempNumber);
-		tempNumber = "";
 	}
 	
 	/**
@@ -67,7 +64,8 @@ public class Model {
 		int asciiValue = (int) numberSymbol;
 		if((asciiValue > 47 && asciiValue < 58) || asciiValue == 46){
 			tempNumber += "" + numberSymbol; //(asciiValue - 48) ;
-			System.out.println("Dans tempNumber : "+tempNumber);
+			System.out.println("Dans tempNumber : "+tempNumber); //TODO
+			listOfNumber.add(tempNumber);
 			isInputOkay = true;
 		}else
 			isInputOkay = false;
@@ -124,7 +122,6 @@ public class Model {
 			if(tempNumber.charAt(0) == '.'){
 				tempNumber = "0" + tempNumber;
 			}
-			listOfNumber.add(tempNumber);
 			tempNumber = "";
 		}
 		return isInputOkay;
@@ -137,6 +134,7 @@ public class Model {
 	private boolean verifyingOrderOfInput(){
 		if(tempNumber.equals(""))
 			return false;
+		tempNumber = "";
 		return true;
 	}
 	//***********************************************//

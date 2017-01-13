@@ -24,9 +24,8 @@ public class Model {
 			anwser = "Everything is okay";
 		}
 		
-		if(input.equals("") || input.equals("Error!") || input.equals("Everything is okay"))
+		if(input.equals(""))
 			anwser = "0";
-		
 		System.out.println("Begin\n--------------------");
 		for(String s : listOfNumber){
 			System.out.println(s);
@@ -42,7 +41,6 @@ public class Model {
 	private void math() {
 		// TODO Auto-generated method stub
 		
-		listOfNumber.clear();
 	}
 
 	/**
@@ -54,8 +52,6 @@ public class Model {
 		for(char c : equation.toCharArray()){
 			verifyingEquation(c);
 		}
-		listOfNumber.add(tempNumber);
-		tempNumber = "";
 	}
 	
 	/**
@@ -137,6 +133,7 @@ public class Model {
 	private boolean verifyingOrderOfInput(){
 		if(tempNumber.equals(""))
 			return false;
+		tempNumber = "";
 		return true;
 	}
 	//***********************************************//

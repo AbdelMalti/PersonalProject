@@ -223,3 +223,203 @@ org.eclipse.recommenders.utils.Logs$LogTraceException
 	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:1)
 	at org.eclipse.recommenders.internal.models.rcp.PrefetchModelArchiveJob.run(PrefetchModelArchiveJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2017-01-12 23:09:27.095 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data file:/C:/Users/Abdeljelil/OneDrive/Ecole/ProjetPErso/PersonalProject/CalculatorProjet/ -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-01-12 23:09:44.536
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Abdeljelil'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2017-01-12 23:43:07.020
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2017-01-12 23:43:07.020
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.020
+!MESSAGE Software being installed: Groovy-Eclipse Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.eclipse.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.020
+!MESSAGE Software currently installed: Groovy Compiler 2.0 Feature 2.9.1.xx-201411061404-e37-RELEASE (org.codehaus.groovy20.feature.feature.group 2.9.1.xx-201411061404-e37-RELEASE)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:07.020
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.020
+!MESSAGE Groovy-Eclipse Plug-in 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.eclipse 2.9.2.xx-201701111810-e45)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.020
+!MESSAGE Groovy-Eclipse plugin 2.9.1.xx-201411061404-e37-RELEASE (org.codehaus.groovy.eclipse 2.9.1.xx-201411061404-e37-RELEASE)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:07.020
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.020
+!MESSAGE From: Groovy-Eclipse Compilerless Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.compilerless.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.020
+!MESSAGE To: org.codehaus.groovy.eclipse [2.9.2.xx-201701111810-e45]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:07.020
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.020
+!MESSAGE From: Groovy-Eclipse Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.eclipse.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.020
+!MESSAGE To: org.codehaus.groovy.compilerless.feature.feature.group [2.9.2.xx-201701111810-e45]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:07.021
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.021
+!MESSAGE From: Groovy Compiler 2.0 Feature 2.9.1.xx-201411061404-e37-RELEASE (org.codehaus.groovy20.feature.feature.group 2.9.1.xx-201411061404-e37-RELEASE)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.021
+!MESSAGE To: org.codehaus.groovy.eclipse [2.9.1.xx-201411061404-e37-RELEASE]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2017-01-12 23:43:07.097
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2017-01-12 23:43:07.097
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.097
+!MESSAGE Software being installed: Groovy-Eclipse Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.eclipse.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.097
+!MESSAGE Software currently installed: Groovy Compiler 2.0 Feature 2.9.1.xx-201411061404-e37-RELEASE (org.codehaus.groovy20.feature.feature.group 2.9.1.xx-201411061404-e37-RELEASE)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:07.097
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.097
+!MESSAGE Groovy-Eclipse Plug-in 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.eclipse 2.9.2.xx-201701111810-e45)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.097
+!MESSAGE Groovy-Eclipse plugin 2.9.1.xx-201411061404-e37-RELEASE (org.codehaus.groovy.eclipse 2.9.1.xx-201411061404-e37-RELEASE)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:07.097
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.098
+!MESSAGE From: Groovy-Eclipse Compilerless Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.compilerless.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.098
+!MESSAGE To: org.codehaus.groovy.eclipse [2.9.2.xx-201701111810-e45]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:07.098
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.098
+!MESSAGE From: Groovy-Eclipse Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.eclipse.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.098
+!MESSAGE To: org.codehaus.groovy.compilerless.feature.feature.group [2.9.2.xx-201701111810-e45]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:07.098
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.098
+!MESSAGE From: Groovy Compiler 2.0 Feature 2.9.1.xx-201411061404-e37-RELEASE (org.codehaus.groovy20.feature.feature.group 2.9.1.xx-201411061404-e37-RELEASE)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.098
+!MESSAGE To: org.codehaus.groovy.eclipse [2.9.1.xx-201411061404-e37-RELEASE]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2017-01-12 23:43:07.115
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2017-01-12 23:43:07.115
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.115
+!MESSAGE Software being installed: Groovy-Eclipse Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.eclipse.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.115
+!MESSAGE Software currently installed: Groovy Compiler 2.0 Feature 2.9.1.xx-201411061404-e37-RELEASE (org.codehaus.groovy20.feature.feature.group 2.9.1.xx-201411061404-e37-RELEASE)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:07.115
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.115
+!MESSAGE Groovy-Eclipse Plug-in 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.eclipse 2.9.2.xx-201701111810-e45)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.115
+!MESSAGE Groovy-Eclipse plugin 2.9.1.xx-201411061404-e37-RELEASE (org.codehaus.groovy.eclipse 2.9.1.xx-201411061404-e37-RELEASE)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:07.115
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.115
+!MESSAGE From: Groovy-Eclipse Compilerless Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.compilerless.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.115
+!MESSAGE To: org.codehaus.groovy.eclipse [2.9.2.xx-201701111810-e45]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:07.115
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.115
+!MESSAGE From: Groovy-Eclipse Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.eclipse.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.115
+!MESSAGE To: org.codehaus.groovy.compilerless.feature.feature.group [2.9.2.xx-201701111810-e45]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:07.115
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.115
+!MESSAGE From: Groovy Compiler 2.0 Feature 2.9.1.xx-201411061404-e37-RELEASE (org.codehaus.groovy20.feature.feature.group 2.9.1.xx-201411061404-e37-RELEASE)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.115
+!MESSAGE To: org.codehaus.groovy.eclipse [2.9.1.xx-201411061404-e37-RELEASE]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2017-01-12 23:43:07.120
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2017-01-12 23:43:07.120
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.120
+!MESSAGE Software being installed: Groovy-Eclipse Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.eclipse.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.120
+!MESSAGE Software currently installed: Groovy Compiler 2.0 Feature 2.9.1.xx-201411061404-e37-RELEASE (org.codehaus.groovy20.feature.feature.group 2.9.1.xx-201411061404-e37-RELEASE)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:07.120
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.120
+!MESSAGE Groovy-Eclipse Plug-in 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.eclipse 2.9.2.xx-201701111810-e45)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.120
+!MESSAGE Groovy-Eclipse plugin 2.9.1.xx-201411061404-e37-RELEASE (org.codehaus.groovy.eclipse 2.9.1.xx-201411061404-e37-RELEASE)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:07.120
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.120
+!MESSAGE From: Groovy-Eclipse Compilerless Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.compilerless.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.120
+!MESSAGE To: org.codehaus.groovy.eclipse [2.9.2.xx-201701111810-e45]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:07.120
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.120
+!MESSAGE From: Groovy-Eclipse Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.eclipse.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.120
+!MESSAGE To: org.codehaus.groovy.compilerless.feature.feature.group [2.9.2.xx-201701111810-e45]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:07.120
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.120
+!MESSAGE From: Groovy Compiler 2.0 Feature 2.9.1.xx-201411061404-e37-RELEASE (org.codehaus.groovy20.feature.feature.group 2.9.1.xx-201411061404-e37-RELEASE)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:07.120
+!MESSAGE To: org.codehaus.groovy.eclipse [2.9.1.xx-201411061404-e37-RELEASE]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2017-01-12 23:43:47.464
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2017-01-12 23:43:47.464
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:47.464
+!MESSAGE Software being installed: Groovy-Eclipse Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.eclipse.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:47.464
+!MESSAGE Missing requirement: JDT Core patch for Groovy-Eclipse plugin on Eclipse 4.5 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.jdt.patch.feature.group 2.9.2.xx-201701111810-e45) requires 'org.eclipse.jdt.feature.group 0.0.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:47.464
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:47.464
+!MESSAGE From: Groovy-Eclipse Compilerless Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.compilerless.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:47.464
+!MESSAGE To: org.codehaus.groovy.headless.feature.feature.group [2.9.2.xx-201701111810-e45]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:47.464
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:47.464
+!MESSAGE From: Groovy-Eclipse Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.eclipse.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:47.464
+!MESSAGE To: org.codehaus.groovy.compilerless.feature.feature.group [2.9.2.xx-201701111810-e45]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:47.464
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:47.464
+!MESSAGE From: Groovy-Eclipse Headless Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.headless.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:47.464
+!MESSAGE To: org.codehaus.groovy.jdt.patch.feature.group [2.9.2.xx-201701111810-e45]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2017-01-12 23:43:47.473
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2017-01-12 23:43:47.473
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:47.473
+!MESSAGE Software being installed: Groovy-Eclipse Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.eclipse.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:47.473
+!MESSAGE Missing requirement: JDT Core patch for Groovy-Eclipse plugin on Eclipse 4.5 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.jdt.patch.feature.group 2.9.2.xx-201701111810-e45) requires 'org.eclipse.jdt.feature.group 0.0.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:47.473
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:47.473
+!MESSAGE From: Groovy-Eclipse Compilerless Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.compilerless.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:47.473
+!MESSAGE To: org.codehaus.groovy.headless.feature.feature.group [2.9.2.xx-201701111810-e45]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:47.473
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:47.473
+!MESSAGE From: Groovy-Eclipse Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.eclipse.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:47.473
+!MESSAGE To: org.codehaus.groovy.compilerless.feature.feature.group [2.9.2.xx-201701111810-e45]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-01-12 23:43:47.473
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:47.473
+!MESSAGE From: Groovy-Eclipse Headless Feature 2.9.2.xx-201701111810-e45 (org.codehaus.groovy.headless.feature.feature.group 2.9.2.xx-201701111810-e45)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-01-12 23:43:47.473
+!MESSAGE To: org.codehaus.groovy.jdt.patch.feature.group [2.9.2.xx-201701111810-e45]

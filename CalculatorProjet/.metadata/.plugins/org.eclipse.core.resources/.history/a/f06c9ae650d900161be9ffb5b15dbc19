@@ -46,7 +46,7 @@ public class Controler {
 		}
 		//To show the symbol pf the button.
 		System.out.println("Reponse : "+anwser);
-		setCalculView(anwser);
+		//setCalculView(anwser);
 	}
 	//*****************************//
 }

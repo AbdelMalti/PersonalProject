@@ -15,4 +15,5 @@
 <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
 <fullyQualifiedTypeName name="Controler.Controler"/>
 <fullyQualifiedTypeName name="Model.Model"/>
+<fullyQualifiedTypeName name="javax.naming.Binding"/>
 </qualifiedTypeNameHistroy>

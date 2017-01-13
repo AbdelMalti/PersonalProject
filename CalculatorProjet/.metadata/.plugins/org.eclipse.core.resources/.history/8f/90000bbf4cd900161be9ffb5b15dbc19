@@ -32,10 +32,7 @@ public class Controler {
 		System.out.println("You click on : " + number);
 		char buttonSymbol = number.charAt(0);
 		
-		if(getCalculView().getTextFromUserInput().equals("Hello")
-				|| getCalculView().getTextFromUserInput().equals("Error!")
-				|| getCalculView().getTextFromUserInput().equals("Everything is okay")
-				)
+		if(getCalculView().getTextFromUserInput().equals("Hello"))
 			setCalculView("");
 		String anwser = getCalculView().getTextFromUserInput() + number;
 		

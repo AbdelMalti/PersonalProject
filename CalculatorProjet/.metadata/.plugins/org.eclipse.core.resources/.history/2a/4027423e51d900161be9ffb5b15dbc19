@@ -19,9 +19,9 @@ public class Model {
 		
 		String anwser = "";
 		if(!isInputOkay){
-			anwser = "Error!";
+			//anwser = "Error!";
 		}else{
-			anwser = "Everything is okay";
+			//anwser = "Everything is okay";
 		}
 		
 		if(input.equals("") || input.equals("Error!") || input.equals("Everything is okay"))
@@ -54,8 +54,6 @@ public class Model {
 		for(char c : equation.toCharArray()){
 			verifyingEquation(c);
 		}
-		listOfNumber.add(tempNumber);
-		tempNumber = "";
 	}
 	
 	/**
@@ -67,7 +65,7 @@ public class Model {
 		int asciiValue = (int) numberSymbol;
 		if((asciiValue > 47 && asciiValue < 58) || asciiValue == 46){
 			tempNumber += "" + numberSymbol; //(asciiValue - 48) ;
-			System.out.println("Dans tempNumber : "+tempNumber);
+			System.out.println("Dans tempNumber : "+tempNumber); //TODO
 			isInputOkay = true;
 		}else
 			isInputOkay = false;
@@ -126,6 +124,8 @@ public class Model {
 			}
 			listOfNumber.add(tempNumber);
 			tempNumber = "";
+		}else{
+			//HERE
 		}
 		return isInputOkay;
 	}
@@ -137,6 +137,7 @@ public class Model {
 	private boolean verifyingOrderOfInput(){
 		if(tempNumber.equals(""))
 			return false;
+		tempNumber = "";
 		return true;
 	}
 	//***********************************************//
