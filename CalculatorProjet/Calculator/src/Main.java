@@ -6,5 +6,4 @@ public class Main {
 		Calculator c = new Calculator();
 		c.setVisible(true);
 	}
-
 }

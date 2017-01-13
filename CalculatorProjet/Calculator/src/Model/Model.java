@@ -13,27 +13,48 @@ public class Model {
 	//***********************************************//
 	
 	//****************** Methodes *******************//
-	public String Output(){
+	public String Output(String input){
 		
-		//TODO : Call the other function.
+		calculatingResult(input);
 		
 		String anwser = "";
 		if(!isInputOkay){
 			anwser = "Error!";
+		}else{
+			anwser = "Everything is okay";
 		}
+		
+		if(input.equals(""))
+			anwser = "0";
 		return anwser;
+	}
+	
+	/**
+	 * 
+	 * @param equation
+	 */
+	private void calculatingResult(String equation){
+		
+		float result = 0;
+		
+		for(char c : equation.toCharArray()){
+			verifyingEquation(c);
+		}
 	}
 	
 	/**
 	 * This method calls others methods to verify if all inputs or good.
 	 * @param numberSymbol
 	 */
-	public void defInputs(char numberSymbol){
+	public void verifyingEquation(char numberSymbol){
 		
 		int asciiValue = (int) numberSymbol;
 		if((asciiValue > 47 && asciiValue < 58) || asciiValue == 46){
 			tempNumber += "" + numberSymbol; //(asciiValue - 48) ;
-		}
+			System.out.println("Dans tempNumber : "+tempNumber);
+			isInputOkay = true;
+		}else
+			isInputOkay = false;
 		
 		switch(numberSymbol){
 			case '+':
@@ -87,8 +108,9 @@ public class Model {
 			if(tempNumber.charAt(0) == '.'){
 				tempNumber = "0" + tempNumber;
 			}
-		}else
-			isInputOkay = true;
+			listOfNumber.add(tempNumber);
+			tempNumber = "";
+		}
 		return isInputOkay;
 	}
 	

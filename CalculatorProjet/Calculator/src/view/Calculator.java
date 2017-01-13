@@ -108,7 +108,6 @@ public class Calculator extends JFrame{
 			String number = e.getActionCommand().toString();
 			controler.OnClick(number);
 		}
-		
 	}
 	
 	class EnterOperationListener implements ActionListener{

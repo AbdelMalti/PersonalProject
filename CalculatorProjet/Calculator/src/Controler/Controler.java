@@ -38,10 +38,12 @@ public class Controler {
 		
 		if(buttonSymbol == '=')
 		{
-			model.defInputs(buttonSymbol);
-			anwser = model.Output();
+			//model.verifyingEquation(buttonSymbol);
+			anwser = model.Output(calculView.getTextFromUserInput().toString());
 		}
-			setCalculView(anwser);
+		//To show the symbol pf the button.
+		System.out.println("Reponse : "+anwser);
+		setCalculView(anwser);
 	}
 	//*****************************//
 }
