@@ -1,6 +1,7 @@
 package Model;
 
 import java.util.List;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Model {
@@ -34,15 +35,24 @@ public class Model {
 		System.out.println("--------------------\nEnd");
 		
 		//When eveything is okay, now we can do the math.
-		math();
+		if(isInputOkay)
+			anwser = math();
 		
 		return anwser;
 	}
 	
-	private void math() {
+	/**
+	 * Method that will take the lists and return the valid anwser. 
+	 */
+	
+	private String math() {
 		// TODO Auto-generated method stub
-		
+		Calculation cal = new Calculation();
+		float anwser = cal.doMath(listOfNumber);
 		listOfNumber.clear();
+		
+		DecimalFormat df = new DecimalFormat("#.###");
+		return df.format(anwser) + "";
 	}
 
 	/**
@@ -66,8 +76,7 @@ public class Model {
 		
 		int asciiValue = (int) numberSymbol;
 		if((asciiValue > 47 && asciiValue < 58) || asciiValue == 46){
-			tempNumber += "" + numberSymbol; //(asciiValue - 48) ;
-			System.out.println("Dans tempNumber : "+tempNumber);
+			tempNumber += "" + numberSymbol;
 			isInputOkay = true;
 		}else
 			isInputOkay = false;
@@ -94,6 +103,14 @@ public class Model {
 				break;
 			
 			case '=' :
+				break;
+				
+			case '(':
+				listOfNumber.add("(");
+				break;
+				
+			case ')':
+				listOfNumber.add(")");
 				break;
 		}
 	}

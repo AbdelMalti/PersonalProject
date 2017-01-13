@@ -29,7 +29,6 @@ public class Controler {
 	
 	//********* Methodes **********//
 	public void OnClick(String number){
-		System.out.println("You click on : " + number);
 		char buttonSymbol = number.charAt(0);
 		
 		if(getCalculView().getTextFromUserInput().equals("Hello")
@@ -41,11 +40,8 @@ public class Controler {
 		
 		if(buttonSymbol == '=')
 		{
-			//model.verifyingEquation(buttonSymbol);
 			anwser = model.Output(calculView.getTextFromUserInput().toString());
 		}
-		//To show the symbol pf the button.
-		System.out.println("Reponse : "+anwser);
 		setCalculView(anwser);
 	}
 	//*****************************//
