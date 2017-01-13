@@ -1,0 +1,27 @@
+package Controler;
+
+import Model.Model;
+import view.Calculator;
+
+public class Controler {
+	
+	private Calculator calculView;
+	private Model model = new Model();
+	
+	public Controler(Calculator c){
+		calculView = c;
+	}
+	
+	public Calculator getCalculView() {
+		return calculView;
+	}
+	
+	public void setCalculView(String update) {
+		calculView.setTextFromUserInput(update);
+	}
+	
+	public void OnClick(String number){
+		System.out.println("You click on : " + number);
+		
+	}
+}

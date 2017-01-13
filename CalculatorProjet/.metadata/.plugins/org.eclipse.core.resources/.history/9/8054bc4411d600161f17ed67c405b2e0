@@ -1,0 +1,16 @@
+package Controler;
+
+import view.Calculator;
+
+public class Controler {
+	
+	static private Calculator calculView;// = new Calculator();
+	
+	public Controler(Calculator c){
+		calculView = c;
+	}
+	
+	public Calculator getCalculView() {
+		return calculView;
+	}
+}

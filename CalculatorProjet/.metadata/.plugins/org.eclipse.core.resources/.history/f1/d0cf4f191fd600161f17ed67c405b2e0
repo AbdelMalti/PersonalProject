@@ -1,0 +1,80 @@
+package Model;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class Model {
+	
+	//***************** Attributes ******************//
+	private List<String> listOfNumber = new ArrayList<String>();
+	private boolean isInputOkay = true;
+	private String tempNumber = "";
+	
+	//***********************************************//
+	
+	//****************** Methodes *******************//
+	public String Output(){
+		
+		//TODO : Call the other function.
+		
+		
+		String anwser = "";
+		if(isInputOkay){
+			
+		}else{
+			anwser = "Error!";
+		}
+		return anwser;
+	}
+	
+	public void defInputs(char numberSymbol){
+		
+		int asciiValue = (int) numberSymbol;
+		if((asciiValue > 47 && asciiValue < 58) || asciiValue == 46){
+			tempNumber += "" + numberSymbol; //(asciiValue - 48) ;
+		}
+		
+		switch(numberSymbol){
+			case '+':
+				break;
+				
+			case '-':
+				break;
+				
+			case '*':
+				break;
+				
+			case '/':
+				break;
+				
+			case '%':
+				break;
+			
+			case '=' :
+				break;
+		}
+	}
+	
+	private boolean verifyingInput(char numberSymbol){
+		int asciiValue = (int) numberSymbol;
+		if(!((asciiValue > 47 && asciiValue < 58) 
+				|| numberSymbol == '=' || numberSymbol == '+' 
+				|| numberSymbol == '-' || numberSymbol == '*' 
+				|| numberSymbol == '/' || numberSymbol == '%'))
+		{
+			isInputOkay = false;
+		}
+		else if(tempNumber.charAt(tempNumber.length()-1) == '.'){
+			isInputOkay = false;
+		}
+		else
+			isInputOkay = true;
+		return isInputOkay;
+	}
+	private boolean verifyingOrderOfInput(){
+		if(tempNumber.equals(""))
+			return false;
+		return true;
+	}
+	//***********************************************//
+}

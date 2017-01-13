@@ -1,0 +1,55 @@
+package Model;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class Model {
+	
+	//***************** Attributes ******************//
+	private List<String> listOfNumber = new ArrayList<String>();
+	private boolean isInputOkay = true;
+	//***********************************************//
+	
+	//****************** Methodes *******************//
+	public String Output(){
+		
+		//TODO : Call the other function.
+		
+		
+		String anwser = "";
+		if(isInputOkay){
+			
+		}else{
+			anwser = "Error!";
+		}
+		return anwser;
+	}
+	
+	public void Calculation(char numberSymbol){
+		
+		switch(numberSymbol){
+			case '+':
+				break;
+				
+			case '-':
+				break;
+				
+			case '*':
+				break;
+				
+			case '/':
+				break;
+				
+			case '%':
+				break;
+		}
+		
+		int asciiValue = (int) numberSymbol;
+		if((asciiValue > 47 && asciiValue < 58) || asciiValue == 46){
+			
+		}else{
+			isInputOkay = false;
+		}
+	}
+	//***********************************************//
+}

@@ -1,0 +1,20 @@
+package Controler;
+
+import view.Calculator;
+
+public class Controler {
+	
+	static private Calculator calculView = new Calculator();
+	
+	public Controler(){
+		this.calculView.setVisible(true);
+	}
+	
+	public Calculator getCalculView() {
+		return calculView;
+	}
+
+	/*public void setCalculView(Calculator calculView) {
+		this.calculView = calculView;
+	}*/
+}

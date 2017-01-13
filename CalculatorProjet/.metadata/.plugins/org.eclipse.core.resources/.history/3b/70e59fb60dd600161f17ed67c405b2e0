@@ -1,0 +1,13 @@
+import Controler.Controler;
+import view.Calculator;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Calculator c = new Calculator();
+		//c.setVisible(true);
+		Controler c = new Controler();
+	}
+
+}
