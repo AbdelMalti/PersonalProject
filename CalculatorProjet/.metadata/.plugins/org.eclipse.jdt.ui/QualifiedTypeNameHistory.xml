@@ -16,4 +16,5 @@
 <fullyQualifiedTypeName name="Controler.Controler"/>
 <fullyQualifiedTypeName name="Model.Model"/>
 <fullyQualifiedTypeName name="javax.naming.Binding"/>
+<fullyQualifiedTypeName name="java.text.DecimalFormat"/>
 </qualifiedTypeNameHistroy>

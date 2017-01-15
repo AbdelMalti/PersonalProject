@@ -36,13 +36,17 @@ public class Controler {
 				|| getCalculView().getTextFromUserInput().equals("Everything is okay")
 				)
 			setCalculView("");
-		String anwser = getCalculView().getTextFromUserInput() + number;
+		String answer = getCalculView().getTextFromUserInput() + number;
 		
 		if(buttonSymbol == '=')
 		{
-			anwser = model.Output(calculView.getTextFromUserInput().toString());
+			answer = model.Output(calculView.getTextFromUserInput().toString());
 		}
-		setCalculView(anwser);
+		if(buttonSymbol == 'C')
+		{
+			answer = "";
+		}
+		setCalculView(answer);
 	}
 	//*****************************//
 }

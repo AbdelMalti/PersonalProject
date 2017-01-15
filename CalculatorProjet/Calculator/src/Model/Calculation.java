@@ -1,12 +1,52 @@
 package Model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Calculation {
 
-	public float doMath(List<String> listOfNumber) {
-		// TODO Auto-generated method stub
-		return (float) 0.675975785989;
+	private List<Node> mainList = new ArrayList<Node>();
+	private List<Node> secondList;
+	private float finalResult = 0;
+	
+	public float doMath(List<Node> listOfNumber) {
+		
+		secondList = listOfNumber;
+		
+		for(Node n : secondList){
+			equation(n);
+		}
+		
+		return finalResult;
 	}
-
+	
+	private void equation(Node n){
+		
+		switch(n.getOperator()){
+			case '+':
+				break;
+				
+			case '-':
+				break;
+				
+			case '*':
+				break;
+				
+			case '/':
+				break;
+				
+			case '%':
+				break;
+			
+			case '=' :
+				break;
+				
+			case '(':
+				break;
+				
+			case ')':
+				break;
+	}
+		
+	}
 }

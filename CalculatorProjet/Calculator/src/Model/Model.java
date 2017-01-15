@@ -7,9 +7,11 @@ import java.util.ArrayList;
 public class Model {
 	
 	//***************** Attributes ******************//
-	private List<String> listOfNumber = new ArrayList<String>();
+	private List<Node> listOfNumber = new ArrayList<Node>();
 	private boolean isInputOkay = true;
-	private String tempNumber = "";
+	private String number1 = "";
+	private String number2 = "";
+	private char symbol = ' ';
 	
 	//***********************************************//
 	
@@ -29,12 +31,12 @@ public class Model {
 			anwser = "0";
 		
 		System.out.println("Begin\n--------------------");
-		for(String s : listOfNumber){
-			System.out.println(s);
+		for(Node n : listOfNumber){
+			System.out.println(n.getNumber1() + " : "+n.getOperator() + " : " + n.getNumber2());
 		}
 		System.out.println("--------------------\nEnd");
 		
-		//When eveything is okay, now we can do the math.
+		//When everything is okay, now we can do the math.
 		if(isInputOkay)
 			anwser = math();
 		
@@ -42,7 +44,7 @@ public class Model {
 	}
 	
 	/**
-	 * Method that will take the lists and return the valid anwser. 
+	 * Method that will take the lists and return the valid answer. 
 	 */
 	
 	private String math() {
@@ -63,9 +65,13 @@ public class Model {
 		
 		for(char c : equation.toCharArray()){
 			verifyingEquation(c);
+			
 		}
-		listOfNumber.add(tempNumber);
-		tempNumber = "";
+		Node nodeTemp = new Node(number1, symbol, number2);
+		listOfNumber.add(nodeTemp);
+		number1 = "";
+		number2 = "";
+		symbol = ' ';
 	}
 	
 	/**
@@ -76,7 +82,7 @@ public class Model {
 		
 		int asciiValue = (int) numberSymbol;
 		if((asciiValue > 47 && asciiValue < 58) || asciiValue == 46){
-			tempNumber += "" + numberSymbol;
+			number2 += "" + numberSymbol;
 			isInputOkay = true;
 		}else
 			isInputOkay = false;
@@ -106,11 +112,13 @@ public class Model {
 				break;
 				
 			case '(':
-				listOfNumber.add("(");
+				Node nodeTemp = new Node(numberSymbol);
+				listOfNumber.add(nodeTemp);
 				break;
 				
 			case ')':
-				listOfNumber.add(")");
+				nodeTemp = new Node(numberSymbol);
+				listOfNumber.add(nodeTemp);
 				break;
 		}
 	}
@@ -134,15 +142,25 @@ public class Model {
 		{
 			isInputOkay = false;
 		}
-		if(tempNumber.length() > 0){
-			if(tempNumber.charAt(tempNumber.length()-1) == '.'){
+		if(number2.length() > 0){
+			if(number2.charAt(number2.length()-1) == '.'){
 				isInputOkay = false;
 			}
-			if(tempNumber.charAt(0) == '.'){
-				tempNumber = "0" + tempNumber;
+			if(number2.charAt(0) == '.'){
+				number2 = "0" + number2;
 			}
-			listOfNumber.add(tempNumber);
-			tempNumber = "";
+			
+			
+			
+			if( ! number1.equals("") )
+			{
+				Node nodeTemp = new Node(number1, symbol, number2);
+				listOfNumber.add(nodeTemp);
+				this.symbol = numberSymbol;
+			}else
+				this.symbol = numberSymbol;
+				number1 = number2;
+				number2 = "";
 		}
 		return isInputOkay;
 	}
@@ -152,7 +170,7 @@ public class Model {
 	 * @return true/false
 	 */
 	private boolean verifyingOrderOfInput(){
-		if(tempNumber.equals(""))
+		if(number2.equals(""))
 			return false;
 		return true;
 	}
