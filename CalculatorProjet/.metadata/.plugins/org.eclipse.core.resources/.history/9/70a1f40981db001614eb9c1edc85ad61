@@ -20,11 +20,10 @@ public class Model {
 	//****************** Methodes *******************//
 	public String Output(String input){
 		
-		invalidInput = false;
 		calculatingResult(input);
 		
 		String anwser = "";
-		if(!isInputOkay || invalidInput){
+		if(!isInputOkay && ! invalidInput){
 			anwser = "Error!";
 		}else{
 			anwser = "Everything is okay";
@@ -70,11 +69,8 @@ public class Model {
 			verifyingEquation(c);
 			
 		}
-		if(! invalidInput)
-		{
-			Node nodeTemp = new Node(number1, symbol, number2);
-			listOfNumber.add(nodeTemp);
-		}
+		Node nodeTemp = new Node(number1, symbol, number2);
+		listOfNumber.add(nodeTemp);
 		number1 = "";
 		number2 = "";
 		symbol = ' ';

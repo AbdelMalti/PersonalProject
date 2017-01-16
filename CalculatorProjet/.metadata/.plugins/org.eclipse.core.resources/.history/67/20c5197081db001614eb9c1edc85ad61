@@ -20,11 +20,10 @@ public class Model {
 	//****************** Methodes *******************//
 	public String Output(String input){
 		
-		invalidInput = false;
 		calculatingResult(input);
 		
 		String anwser = "";
-		if(!isInputOkay || invalidInput){
+		if(!isInputOkay || ! invalidInput){
 			anwser = "Error!";
 		}else{
 			anwser = "Everything is okay";
@@ -40,8 +39,8 @@ public class Model {
 		System.out.println("--------------------\nEnd");
 		
 		//When everything is okay, now we can do the math.
-		if(isInputOkay)
-			anwser = math();
+		/*if(isInputOkay)
+			anwser = math();*/
 		
 		return anwser;
 	}

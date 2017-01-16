@@ -12,19 +12,16 @@ public class Model {
 	private String number1 = "";
 	private String number2 = "";
 	private char symbol = ' ';
-	private boolean haveComma = false;
-	private boolean invalidInput = false;
 	
 	//***********************************************//
 	
 	//****************** Methodes *******************//
 	public String Output(String input){
 		
-		invalidInput = false;
 		calculatingResult(input);
 		
 		String anwser = "";
-		if(!isInputOkay || invalidInput){
+		if(!isInputOkay){
 			anwser = "Error!";
 		}else{
 			anwser = "Everything is okay";
@@ -70,11 +67,8 @@ public class Model {
 			verifyingEquation(c);
 			
 		}
-		if(! invalidInput)
-		{
-			Node nodeTemp = new Node(number1, symbol, number2);
-			listOfNumber.add(nodeTemp);
-		}
+		Node nodeTemp = new Node(number1, symbol, number2);
+		listOfNumber.add(nodeTemp);
 		number1 = "";
 		number2 = "";
 		symbol = ' ';
@@ -90,11 +84,6 @@ public class Model {
 		if((asciiValue > 47 && asciiValue < 58) || asciiValue == 46){
 			number2 += "" + numberSymbol;
 			isInputOkay = true;
-			
-			if(asciiValue == 46 && haveComma)
-				invalidInput = true;
-			if(asciiValue == 46 && ! haveComma)
-				haveComma = true;
 		}else
 			isInputOkay = false;
 		
@@ -165,11 +154,8 @@ public class Model {
 			
 			if( ! number1.equals("") )
 			{
-				if(! invalidInput)
-				{
-					Node nodeTemp = new Node(number1, symbol, number2);
-					listOfNumber.add(nodeTemp);
-				}
+				Node nodeTemp = new Node(number1, symbol, number2);
+				listOfNumber.add(nodeTemp);
 				this.symbol = numberSymbol;
 			}else
 				this.symbol = numberSymbol;
