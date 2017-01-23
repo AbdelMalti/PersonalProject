@@ -1,0 +1,48 @@
+package Model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Calculation {
+
+	private List<Node> mainList = new ArrayList<Node>();
+	private List<Node> secondList;
+	private float finalResult = 0;
+	
+	public float doMath(List<Node> listOfNumber) {
+		
+		secondList = listOfNumber;
+		
+		return finalResult;
+	}
+	
+	private void equation(char operation){
+		
+		switch(operation){
+		case '+':
+			break;
+			
+		case '-':
+			break;
+			
+		case '*':
+			break;
+			
+		case '/':
+			break;
+			
+		case '%':
+			break;
+		
+		case '=' :
+			break;
+			
+		case '(':
+			break;
+			
+		case ')':
+			break;
+	}
+		
+	}
+}

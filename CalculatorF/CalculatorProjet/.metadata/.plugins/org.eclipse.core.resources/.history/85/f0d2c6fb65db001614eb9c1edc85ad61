@@ -1,0 +1,79 @@
+package Model;
+
+public class Node {
+	//Attributes
+	private int number;
+	private char operator;
+	
+	//All possible type of construtor
+	//***************************************//
+	public Node(String number, String operator){
+		this.number = Integer.parseInt(number);
+		this.operator = operator.charAt(0);
+	}
+	
+	public Node(int number, char operator){
+		this.number = number;
+		this.operator = operator;
+	}
+	
+	public Node(int number, String operator){
+		this.number = number;
+		this.operator = operator.charAt(0);
+	}
+	
+	public Node(String number, char operator){
+		this.number = Integer.parseInt(number);
+		this.operator = operator;
+	}
+	
+	//Constructors for '(' and ')'
+	//*******************//
+	public Node(String par){
+		this.number = 0;
+		this.operator = par.charAt(0);
+	}
+	
+	public Node(char par){
+		this.number = 0;
+		this.operator = par;
+	}
+	//*******************//
+	//***************************************//
+	
+	//Getters & Setters
+	//***************************************//
+		//Number Variable.
+	public int getNumber(){
+		return this.number;
+	}
+	
+	public void setNumber(String number){
+		this.number = Integer.parseInt(number);
+	}
+	
+	public void setNumber(char number){
+		this.number = (int) number;
+	}
+	
+	public void setNumber(int number){
+		this.number = number;
+	}
+		
+		//Operator Variable.
+	public char getOperator(){
+		return this.operator;
+	}
+	
+	public void setOperator(String operator){
+		this.operator = operator.charAt(0);
+	}
+	
+	public void setOperator(char operator){
+		this.operator = operator;
+	}
+	//***************************************//
+	//Methodes
+	//***************************************//
+	//***************************************//
+}

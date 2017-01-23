@@ -1,0 +1,66 @@
+package Model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Calculation {
+
+	private List<Node> mainList = new ArrayList<Node>();
+	private List<Node> secondList;
+	private float finalResult = 0;
+	private Node leftNode;
+	private Node rightNode;
+	
+	public float doMath(List<Node> listOfNumber) {
+		
+		secondList = listOfNumber;
+		
+		
+		for(Node n : secondList){
+			secondList.get(0);
+			equation(n);
+		}
+		
+		for(int i=0 ; i < secondList.size() ; ++i){
+			leftNode = rightNode;
+		}
+		
+		return finalResult;
+	}
+	
+	private void equation(Node n){
+		
+		switch(n.getOperator()){
+			case '+':
+				break;
+				
+			case '-':
+				break;
+				
+			case '*':
+				break;
+				
+			case '/':
+				break;
+				
+			case '%':
+				break;
+			
+			case '=' :
+				break;
+				
+			case '(':
+				break;
+				
+			case ')':
+				break;
+		}
+		
+	}
+	
+	private boolean canBePutInMainList(char operationSymbol){
+		if(operationSymbol == '*' || operationSymbol == '/' || operationSymbol == '%')
+			return false;
+		return true;
+	}
+}
